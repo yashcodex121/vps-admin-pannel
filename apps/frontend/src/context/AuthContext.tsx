@@ -1,7 +1,7 @@
 'use client';
 
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { IUser } from '@nexus/types';
+import { IUser } from '@/types';
 import { api } from '@/lib/api';
 
 interface AuthContextType {

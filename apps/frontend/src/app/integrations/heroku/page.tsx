@@ -12,7 +12,7 @@ import {
   Cpu,
   CheckCircle2,
 } from 'lucide-react';
-import { IHerokuApp } from '@nexus/types';
+import { IHerokuApp } from '@/types';
 
 export default function HerokuIntegrationPage() {
   const [apps, setApps] = useState<IHerokuApp[]>([]);

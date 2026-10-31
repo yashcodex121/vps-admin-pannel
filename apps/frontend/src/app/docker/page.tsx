@@ -17,7 +17,7 @@ import {
   Cpu,
   RefreshCw,
 } from 'lucide-react';
-import { IDockerContainer, IDockerImage } from '@nexus/types';
+import { IDockerContainer, IDockerImage } from '@/types';
 
 export default function DockerManagerPage() {
   const [containers, setContainers] = useState<IDockerContainer[]>([]);

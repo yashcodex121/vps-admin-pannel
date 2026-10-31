@@ -18,7 +18,7 @@ import {
   Layers,
   Rocket,
 } from 'lucide-react';
-import { IDeployment, IDeploymentLog } from '@nexus/types';
+import { IDeployment, IDeploymentLog } from '@/types';
 
 export default function DeploymentTerminalPage() {
   const [activeDeployment, setActiveDeployment] = useState<IDeployment | null>(null);

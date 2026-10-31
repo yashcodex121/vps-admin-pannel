@@ -14,7 +14,7 @@ import {
   Smartphone,
   CheckCircle2,
 } from 'lucide-react';
-import { IAuditLog } from '@nexus/types';
+import { IAuditLog } from '@/types';
 
 export default function SecurityCenterPage() {
   const [auditLogs, setAuditLogs] = useState<IAuditLog[]>([]);

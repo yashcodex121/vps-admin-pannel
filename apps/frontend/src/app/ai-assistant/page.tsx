@@ -17,7 +17,7 @@ import {
   Server,
   Zap,
 } from 'lucide-react';
-import { IAiMessage, IAiActionRequest } from '@nexus/types';
+import { IAiMessage, IAiActionRequest } from '@/types';
 
 export default function AiAssistantPage() {
   const [messages, setMessages] = useState<IAiMessage[]>([

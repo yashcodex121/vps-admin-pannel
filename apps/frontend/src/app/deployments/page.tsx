@@ -19,7 +19,7 @@ import {
   ExternalLink,
   Plus,
 } from 'lucide-react';
-import { IDeployment } from '@nexus/types';
+import { IDeployment } from '@/types';
 
 export default function DeploymentCenterPage() {
   const [deployments, setDeployments] = useState<IDeployment[]>([]);

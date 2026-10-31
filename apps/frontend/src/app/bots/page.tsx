@@ -20,7 +20,7 @@ import {
   Clock,
   Sparkles,
 } from 'lucide-react';
-import { IService } from '@nexus/types';
+import { IService } from '@/types';
 
 export default function BotManagerPage() {
   const [services, setServices] = useState<IService[]>([]);

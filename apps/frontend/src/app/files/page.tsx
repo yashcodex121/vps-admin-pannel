@@ -15,7 +15,7 @@ import {
   ShieldAlert,
   ArrowLeft,
 } from 'lucide-react';
-import { IFileEntry } from '@nexus/types';
+import { IFileEntry } from '@/types';
 
 export default function FileManagerPage() {
   const [currentPath, setCurrentPath] = useState('/home/deploy');

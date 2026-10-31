@@ -14,7 +14,7 @@ import {
   CheckCircle2,
   AlertTriangle,
 } from 'lucide-react';
-import { IBackup } from '@nexus/types';
+import { IBackup } from '@/types';
 
 export default function BackupsPage() {
   const [backups, setBackups] = useState<IBackup[]>([]);

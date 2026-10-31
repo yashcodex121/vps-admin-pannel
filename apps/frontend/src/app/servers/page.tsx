@@ -19,7 +19,7 @@ import {
   Activity,
   Key,
 } from 'lucide-react';
-import { IServer } from '@nexus/types';
+import { IServer } from '@/types';
 import { formatBytes, formatUptime } from '@/lib/utils';
 
 export default function ServersPage() {

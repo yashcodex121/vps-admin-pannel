@@ -17,7 +17,7 @@ import {
   Cpu,
   Wifi,
 } from 'lucide-react';
-import { ISystemAlert } from '@nexus/types';
+import { ISystemAlert } from '@/types';
 import {
   LineChart,
   Line,

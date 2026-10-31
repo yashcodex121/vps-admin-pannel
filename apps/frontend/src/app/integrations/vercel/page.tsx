@@ -12,7 +12,7 @@ import {
   Globe,
   CheckCircle2,
 } from 'lucide-react';
-import { IVercelProject } from '@nexus/types';
+import { IVercelProject } from '@/types';
 
 export default function VercelIntegrationPage() {
   const [projects, setProjects] = useState<IVercelProject[]>([]);

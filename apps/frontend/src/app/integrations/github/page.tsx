@@ -14,7 +14,7 @@ import {
   Rocket,
   CheckCircle2,
 } from 'lucide-react';
-import { IGitHubRepo } from '@nexus/types';
+import { IGitHubRepo } from '@/types';
 
 export default function GitHubIntegrationPage() {
   const [repos, setRepos] = useState<IGitHubRepo[]>([]);
