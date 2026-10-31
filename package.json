@@ -1,0 +1,30 @@
+{
+  "name": "nexus-ai-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NEXUS AI — Enterprise AI-Powered VPS & Cloud Management Platform",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev:agent": "npm run dev --workspace=vps-agent",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "keywords": [
+    "devops",
+    "vps",
+    "ai",
+    "cloud",
+    "docker",
+    "deployment",
+    "management"
+  ],
+  "author": "NEXUS AI Team",
+  "license": "MIT"
+}

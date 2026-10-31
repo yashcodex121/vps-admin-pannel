@@ -1,0 +1,14 @@
+FROM node:20-alpine
+
+WORKDIR /opt/nexus-agent
+
+COPY apps/vps-agent/package.json ./
+RUN npm install --omit=dev
+
+COPY apps/vps-agent/dist ./dist
+
+ENV NEXUS_BACKEND_URL=http://localhost:5000
+ENV NEXUS_SERVER_ID=server_id_placeholder
+ENV NEXUS_AGENT_TOKEN=agent_token_placeholder
+
+CMD ["node", "dist/index.js"]

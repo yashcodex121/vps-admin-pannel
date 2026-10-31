@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  nexus-backend:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.backend
+    container_name: nexus-backend
+    restart: always
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - NODE_ENV=production
+      - MONGODB_URI=mongodb://mongo:27017/nexus_ai
+      - JWT_ACCESS_SECRET=nexus_super_secret_jwt_access_token_key_change_in_production_32chars
+      - JWT_REFRESH_SECRET=nexus_super_secret_jwt_refresh_token_key_change_in_production_32chars
+      - FRONTEND_ORIGIN=https://nexus.yourdomain.com
+      - ENCRYPTION_KEY=0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
+      - DEFAULT_AI_PROVIDER=groq
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:7-jammy
+    container_name: nexus-mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - nexus_mongo_data:/data/db
+
+volumes:
+  nexus_mongo_data:
